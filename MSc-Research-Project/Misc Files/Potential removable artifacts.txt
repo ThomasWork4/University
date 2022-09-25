@@ -1,0 +1,32 @@
+101 in detecting noisy artifacts. If there is any doubt in your mind. Don't get rid of it. Removing useful brain 
+signal data, is way worse then having a bit of extra noise to contend with. 
+
+Remember that artifacts are numbered based on their variance in the data. Some artifacts
+Once isolated can look very bad but in actual fact that dont have much effect on the 
+variance in the data. Some people don't remove artifacts past IC20 or further in some cases
+
+Potential Artifacts to remove (Look for obvious blinks, heart beats, 
+and single electrode reliances where all the weights seem to be 0 except for one area)
+
+Artifact 000 - Entirely reliant on single electrode. No ERP activity, and barely any
+recognizable activity in ERP time domain chart
+
+Same goes for - Artifact 001, artifact 015, artifact 018
+
+Only doubt is that the power spectrum typically shows a 1/f shape. Starting high, curving 
+and then plateuing. 
+
+In all these artifacts, the power spectrum shows an expected shape? 
+
+Artifact 002 - Could be a blink, very anterior weight distribution, 
+ERP has small segments that could represent blinks. Also, the ERP time domain
+chart doesn't display the typical updown spikes of brain activity
+
+Artifact 003 - Could also be a blink, but less likely then artifact 2. 
+Still shows signs (anterior weight distribution, also blinks in ERP representation)
+That being said, the ERP representation shows too many blink indicators to be sure. 
+
+Artifact 021, 031, 035 - Could be EMG (muscular). Power spectrum, moves up before taking the usual 1/f shape
+
+
+

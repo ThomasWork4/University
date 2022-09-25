@@ -1,0 +1,19 @@
+Epoching 
+
+Dataset should include STIM channels that recorded electrical signals sent from the stimulus delivery computer as squarewave pulses
+These pulses are used to mark experimental events
+
+MNE couldn't find any STIM channels but the raw object has annotations. 
+
+So instead of mne.find_events I'm going to use mne.events_from_annotations
+
+After plotting the events I visualized them. Obviously, it doesn't look great but it was more for me 
+to see where the events were actually coming from in the recording.
+
+Before epoching, I needed to make a reject_criteria. These are basically data quality constraints: I reject any epoch 
+peak-to-peak signal amplitude is beyond reasonable limits for that channel type. 
+
+I'm not exactly sure what "beyond reasonable limits" would be for our dataset bearing in mind these values have been 
+taken from the demonstration which is a completely different dataset.
+
+Now I epoch the data given my events by stipulating a start and end time. Although it doesn't seem to work in seconds.

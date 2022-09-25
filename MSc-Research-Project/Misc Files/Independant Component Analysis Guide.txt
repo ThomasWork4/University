@@ -1,0 +1,13 @@
+ICA Process
+
+1. Data is scaled to unit variance and whitened using principal componenent analysis
+   this is a two stage process:
+	i) Data must be pre-whitened to deal with different units (Volts for EEG Tesla for MEG)
+	   The data is scaled using the standard deviation across all channels
+	ii) Pre-whitened data is then decomposed using PCA (Principal component analysis)
+
+2. The results from the principal component analysis are then passed to the ICA algorithm (number specified by n_components)
+
+3. We must then visualize the independant components and exclude any that capture artifacts that we want to repair 
+
+5. We can then reconstruct the sensor signal using ICA objects apply method. 
