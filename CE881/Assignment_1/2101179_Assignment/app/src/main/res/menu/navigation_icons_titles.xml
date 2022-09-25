@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="SpeechToSpeech"
+          android:id="@+id/Fragment_S2S"
+          android:icon="@drawable/ic_s2s"/>
+
+    <item android:title="SpeechToText"
+          android:id="@+id/Fragment_S2T"
+          android:icon="@drawable/ic_s2t"/>
+
+    <item android:title="TextToSpeech"
+          android:id="@+id/Fragment_T2S"
+          android:icon="@drawable/ic_t2s"/>
+
+    <item android:title="TextToText"
+          android:id="@+id/Fragment_T2T"
+          android:icon="@drawable/ic_t2t"/>
+
+</menu>
